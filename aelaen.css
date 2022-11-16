@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+margin: 0; 
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500; 
+	text-decoration: none
+
+}
+
+header{
+	position: sticky; 
+	top:10px; 
+	z-index: 999; 
+	border-bottom: solid 2px; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	width:100%;
+	margin: auto
+}
+.container{
+	width:90%;
+	margin: auto 
+	
+}
+
+.first-grid{
+	display: grid; 
+	grid-template-columns: 40% auto; 
+	height: 50px; 
+	align-content: center; 
+	width: 90%;
+	margin: auto
+	
+
+}
+
+.topmenu{
+	display: grid; 
+	grid-template-columns: 30% 50% auto;
+}
+
+.title{
+	font-size: 30px
+}
+
+.topmenu a {
+	color: black; 
+	position : relative
+	
+}
+
+.topmenu a:after{
+	  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: transform 0.25s ease-out;
+}
+.topmenu a:hover:after{
+	 transform: scaleX(1);
+  transform-origin: center;
+	
+}
+
+.description{
+	
+}
+.eol{
+	position: relative; 
+	height: 500px;
+	
+}
+
+#eol {
+    position: absolute;
+    width: 700px ; 
+	margin: auto;
+	top: 0;
+	right:0;
+	left: 40%;
+	bottom:0;
+	transition: filter 1s;
+	filter: grayscale(1)
+}
+
+#eol:hover{
+	filter: grayscale(0)
+	
+}
+
+
+.acne{
+	position: relative;
+	height: 400px; 
+}
+
+#acne{
+	position: absolute; 
+	width: 800px; 
+	margin: auto;
+	top: 100px; 
+	right: 0;
+	left:0;
+	bottom:0; 
+	filter: grayscale(0.8); 
+	transition: 1s
+}
+
+#acne:hover{
+	filter: grayscale(0)
+}
+
+.description{
+	padding: 100px
+}

@@ -15,7 +15,7 @@ header{
 	border-bottom: solid 2px; 
 	padding-left: 10px; 
 	padding-right: 10px; 
-	width:100%;
+	width:inherit;
 	margin: auto
 }
 .container{
